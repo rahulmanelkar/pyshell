@@ -2,6 +2,7 @@ from subprocess import run
 import sys
 
 def ccsh():
+    """Implementation of the shell. Runs forever till exit command is used."""
     while True:
         cmd = input("ccsh> ").strip()
         if cmd == "exit":
